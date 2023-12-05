@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PeliPedia</title>
+    <link rel="stylesheet" href="./css/intro.css">
 </head>
 <body>
-    
+    <div class="contenedor-index">
+        <div id="registro" class="form-contenedor">
+            <h2>Registrarse</h2>
+            <form id="form-registro">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="usuario-registro">Usuario:</label>
+                <input type="text" id="usuario-registro" name="usuario-registro" required>
+
+                <label for="clave-registro">Contraseña:</label>
+                <input type="password" id="clave-registro" name="clave-registro" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+        <div id="inicio-sesion" class="form-contenedor">
+            <h2>Iniciar Sesion</h2>
+            <form id="form-inicio-sesion">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+
+                <label for="clave">Contraseña:</label>
+                <input type="password" id="clave" name="clave" required>
+
+                <button type="submit">Iniciar Sesion</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./intro.js"></script>
 </body>
 </html>

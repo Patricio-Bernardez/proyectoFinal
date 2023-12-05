@@ -1,0 +1,183 @@
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #141414;
+    font-family: 'Open Sans', sans-serif;
+}
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+header{
+    padding: 30px 0;
+}
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    color: rgb(255, 99, 71);
+    font-size: 40px;
+}
+header nav a{
+    color: #aaa;
+    text-decoration: none;
+    margin-right: 20px;
+}
+header nav a:hover{
+    color: #fff;
+}
+
+
+.pelicula-mas-vista{
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #fff;
+    background: linear-gradient(rgb(0, 0, 0, .50) 0%, rgb(0, 0, 0, .50) 100%), url(https://www.themoviedb.org/t/p/original/eqyjaFhLnq9PHUm4ETXrrVAw8C6.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+}
+.pelicula-mas-vista .contenedor{
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+.pelicula-mas-vista .titulo-pelicula-mas-vista{
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+.pelicula-mas-vista .descripcion-pelicula-mas-vista{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+}
+.pelicula-mas-vista .boton{
+    background-color: rgb(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: #fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+.pelicula-mas-vista .boton:hover{
+    background: #fff;
+    color: #000;
+}
+.pelicula-mas-vista .boton i{
+    margin-right: 1.25em;
+}
+.contenedor-titulo-controles{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.contenedor-titulo-controles h3{
+    color: #fff;
+    font-size: 30px;
+}
+.contenedor-titulo-controles .indicadores button{
+    background: #fff;
+    height: 3px;
+    width: 10px;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px; 
+}
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo{
+    background: red;
+}
+.seleccion-peliculas{
+    margin-bottom: 70px;
+}
+.seleccion-peliculas .contenedor-principal{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.seleccion-peliculas .contenedor-principal .flecha-izquierda,
+.seleccion-peliculas .contenedor-principal .flecha-derecha{
+    position: absolute;
+    border: none;
+    background: rgb(0, 0, 0, 0.3);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50%-25%);
+    line-height: 40px;
+    width: 50px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2 ease all;
+}
+.seleccion-peliculas .contenedor-principal .flecha-izquierda:hover,
+.seleccion-peliculas .contenedor-principal .flecha-derecha:hover{
+    background: rgb(0, 0, 0, .9);
+}
+.seleccion-peliculas .contenedor-principal .flecha-izquierda{
+    left: 0;
+}
+.seleccion-peliculas .contenedor-principal .flecha-derecha{
+    right: 0;
+}
+.seleccion-peliculas .contenedor-peliculas{
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.seleccion-peliculas .contenedor-peliculas .peliculas{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.seleccion-peliculas .contenedor-peliculas .pelicula{
+    min-width: 20%;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+}
+.seleccion-peliculas .contenedor-peliculas .pelicula.hover{
+    transform: scale(1.2);
+    transform-origin: center;
+}
+.seleccion-peliculas .contenedor-peliculas .pelicula img{
+    width: 100%;
+    vertical-align: top;
+}
+footer{
+    background-color: #2b313a;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 75px;
+    justify-content: space-evenly;
+}
+.info-footer{
+    font-size: 12px;
+}
+.instagram{
+    width: 25px;
+    padding-left: 5px;
+}
+.facebook{
+    width: 25px;
+    padding-left: 5px;
+}
+.whatsapp{
+    width: 25px;
+    padding-left: 5px;
+}

@@ -1,0 +1,5 @@
+[
+    { "nombre": "Usuario1", "usuario": "usuario1", "clave": "clave1" },
+    { "nombre": "Usuario2", "usuario": "usuario2", "clave": "clave2" },
+    { "nombre": "Usuario3", "usuario": "usuario3", "clave": "clave3" }
+]
